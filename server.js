@@ -1,7 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-const fetch = require("node-fetch");
 const app = express();
+
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args))
+
 
 const PORT = process.env.PORT || 3000;
 const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK;
