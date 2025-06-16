@@ -11,8 +11,8 @@ const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK;
 
 app.get("/", (req, res) => {
   const now = new Date();
-  const date = now.toLocaleDateString('fr-FR');
-  const time = now.toLocaleTimeString('fr-FR');
+  const date = now.toLocaleDateString('fr-FR', { timeZone: "Europe/Paris" });
+  const time = now.toLocaleTimeString('fr-FR', { timeZone: "Europe/Paris" });
 
   fetch(DISCORD_WEBHOOK_URL, {
     method: "POST",
