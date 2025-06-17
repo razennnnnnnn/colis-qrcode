@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
        content: `📦 **Colis scanné !**
 📍 **Date :** ${date}
 🕒 **Heure :** ${time}
-🔗 _QR code scanné devant chez toi_`
+📌 _Va le chercher ! _`
     })
   })
   .then(() => console.log('Webhook Discord envoyé'))
