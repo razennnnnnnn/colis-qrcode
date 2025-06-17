@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-       content: `📦 **Colis scanné !**
+       content: `<@1234284178804183151>\n📦 **Colis scanné !**
 📍 **Date :** ${date}
 🕒 **Heure :** ${time}
 📌 _Va le chercher ! _`
