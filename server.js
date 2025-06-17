@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   .then(() => console.log('Webhook Discord envoyé'))
   .catch(err => console.error('Erreur webhook Discord:', err));
 
-  res.send("<h1>Notification envoyée à Mathieu Languenakers, Merci pour la livraison</h1>");
+  res.send("<h1>Notification envoyée , Merci pour la livraison</h1>");
 });
 
 app.listen(PORT, () => {
